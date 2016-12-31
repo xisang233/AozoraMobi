@@ -75,6 +75,7 @@ csvinit.py -> FileCheck()
 例2：输入`こころ 夏目漱石` (注意‘ ’为半角空格)
 > Search:`こころ 夏目漱石`
 > 000 --> ('こころ', '夏目漱石', '773_ruby_5968.zip', '773_ruby_5968.mobi', datetime.datetime(2010, 10, 31, 0, 0))
+>
 > Number:`0`
 
 例3：输入`銀河`
@@ -82,6 +83,7 @@ csvinit.py -> FileCheck()
 > 000 --> ('銀河鉄道の夜', '宮沢賢治', '43737_ruby_19028.zip', '43737_ruby_19028.mobi', datetime.datetime(2010, 11, 1, 0, 0))
 > 001 --> ('銀河の下の町', '小川未明', '52057_ruby_48086.zip', '52057_ruby_48086.mobi', datetime.datetime(2012, 7, 17, 0, 0))
 > 002 --> ('銀河まつり', '吉川英治', '52441_ruby_49986.zip', '52441_ruby_49986.mobi', datetime.datetime(2013, 1, 23, 0, 0))
+>
 > Number:`000`
 
 ### 推送
