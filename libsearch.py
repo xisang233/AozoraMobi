@@ -36,11 +36,6 @@ def Search(Name = "", Writer = ""):
                 Result.append(Id)
     return Result
 
-def Move(Id):
-    Name, Writer, FileZip, FileMobi = DicId[Id][:4]
-    shutil.copy('./mobifile/' + FileMobi, Writer + ' ' + Name + '.mobi')
-    return Writer + ' ' + Name + '.mobi'
-
 def find():
     FileList = []
     Input = input('Search:')
@@ -51,18 +46,4 @@ def find():
     else:
         ListInput = Input.split(' ')
         Result = Search(ListInput[0], ListInput[1])
-
-    i = 0
-    for Id in Result:
-        print('%03d -->' %i, DicId[Id])
-        i += 1
-    Numbers = input('Number:')
-    Numbers = Numbers.replace(' ', ' ')
-    if ' ' not in Numbers:
-        Move(Result[int(Numbers)])
-    else:
-        Numbers = Numbers.split(' ')
-        for Id in Numbers:
-            Move(Result[int(Numbers)])
-            FileList.append(Id)
-    return FileList
+    return Result
